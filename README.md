@@ -1,21 +1,6 @@
-# Todo App with Express and Mongoose
+# Auth-express-jwt-(mongodb)
 
-This is a simple Todo app using MongoDB (via Mongoose) and JWT for authentication.
-
-## Setup
-
-1. Clone the repo and install dependencies:
-   ```bash
-   npm install
-   ```
-2. Start MongoDB locally:
-   ```bash
-   mongod
-   ```
-3. Run the app:
-   ```bash
-   node app.js
-   ```
+Simplified Express app with jwt verification with a simplest frontend you can use postman also data is stored in mongodb 
 
 ## Usage
 
