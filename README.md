@@ -1,14 +1,50 @@
-# Auth-express-jwt-(mongodb)
+# Auth-express-jwt-mongodb
 
-Simplified Express app with jwt verification with a simplest frontend you can use postman also data is stored in mongodb 
+Backend only
+
+Simplified Express app with jwt verification and data is stored in mongo db 
+
+user postman for requests
+
+## Features
+- **Sign Up**: Register users
+- **Sign In**: Authenticate and get JWTs
+- **Get User Info**: Retrieve user details
 
 ## Usage
+1. Clone: `git clone https://github.com/-Singh02/express-mongo.git`
+2. Install: `npm install`
+3. Run: `node index.js`
 
-- **POST** `/signup` – Create a new user.
-- **POST** `/signin` – Sign in and get a JWT token.
-- **GET** `/me` – Get current user (requires `Authorization: Bearer <token>`).
-- **POST** `/todo` – Create a todo (requires auth).
-- **GET** `/todos` – Fetch todos (requires auth).
+
+**POST /signup**
+```json
+{ 
+    "username": "gurvinder", 
+    "password": "yourpassword", 
+}
 ```
 
-You can copy this content into a text editor and save it as `README.md`. If you need me to create the file for you, let me know!
+**POST /signin**
+```json
+{ 
+    "username": "gurvinder", 
+    "password": "yourpassword" 
+}
+```
+
+**Get /me**
+- Include header: `token: the output you get in signin`
+
+**POST /todo**
+- Include header: `token: the output you get in signin`
+```json
+{ 
+    "title": "commplete thi s", 
+    "done": false 
+}
+```
+
+**GET /todos**
+- Include header: `token: the output you get in signin`
+
