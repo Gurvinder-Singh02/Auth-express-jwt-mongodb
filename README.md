@@ -11,12 +11,6 @@ user postman for requests
 - **Sign In**: Authenticate and get JWTs
 - **Get User Info**: Retrieve user details
 
-## Usage
-1. Clone: `git clone https://github.com/-Singh02/express-mongo.git`
-2. Install: `npm install`
-3. Run: `node index.js`
-
-
 **POST /signup**
 ```json
 { 
